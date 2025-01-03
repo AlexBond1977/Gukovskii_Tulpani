@@ -1,0 +1,252 @@
+/*1200 - 1230*/
+@media screen and (max-width: 1230px) {
+    .products-items {
+        justify-content: center;
+    }
+
+    .product {
+        margin: 12px;
+    }
+}
+
+/*1160 - 1199*/
+@media screen and (max-width: 1199px) {
+    .main-image::before {
+        width: 580px;
+    }
+}
+
+/*1100 - 1159*/
+@media screen and (max-width: 1159px) {
+    .main-image::before {
+        width: 550px;
+    }
+}
+
+/*1060 - 1099*/
+@media screen and (max-width: 1099px) {
+    .main-image::before {
+        width: 520px;
+        bottom: -20px;
+    }
+}
+
+/*950 - 1059*/
+@media screen and (max-width: 1059px) {
+    .main-image::before {
+        display: none;
+    }
+
+    .main {
+        margin-bottom: 0;
+    }
+}
+
+
+/*850 - 949*/
+@media screen and (max-width: 949px) {
+    .advantages-advantage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .main-info h1 {
+        margin: 20px 0;
+    }
+
+    .main-info p {
+        margin-bottom: 10px;
+    }
+}
+
+/*768 - 849*/
+@media screen and (max-width: 849px) {
+    .advantages-all {
+        grid-gap: 0;
+    }
+
+    .advantages-advantage {
+        width: 580px;
+    }
+
+    .advantages-image .image1 {
+        display: none;
+    }
+
+    .advantages-image .image2 {
+        position: absolute;
+        transform: translate(-70%, -60%);
+        border: none;
+    }
+}
+
+/*625 - 767*/
+@media screen and (max-width: 767px) {
+    .header-text {
+        margin: 10px 0;
+    }
+
+    .header-phone-one {
+        margin-bottom: 10px;
+    }
+
+    .main .container {
+        flex-direction: column;
+    }
+
+    .main-image {
+        order: 1;
+    }
+
+    .main-info {
+        order: 2;
+        margin-right: 10px;
+    }
+
+    .main h1,
+    .main p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 390px;
+    }
+}
+
+/*612 - 624*/
+@media screen and (max-width: 624px) {
+    .main-info h1 {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+
+    .main-info p {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .advantages-image .image2 {
+        width: 200px;
+        height: auto;
+        transform: translate(-90%, -70%);
+    }
+
+    .advantages-info h2 {
+        font-size: 30px;
+        max-width: 375px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .advantages-info p {
+        font-size: 20px;
+        color: rgb(31, 31, 31);
+        line-height: 1.2;
+        max-width: 350px;
+        text-align: center;
+    }
+
+    .products-title {
+        font-size: 30px;
+        max-width: 100%;
+    }
+
+    .directions h2{
+        font-size: 30px;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer .logo {
+        margin-bottom: 20px;
+    }
+
+    .rights {
+        margin-top: 20px;
+    }
+}
+
+/*520 - 611*/
+@media screen and (max-width: 611px) {
+    .product-image {
+        pointer-events: none;
+    }
+
+    .advantages-advantage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        width: 300px;
+    }
+
+}
+
+/*375 - 519*/
+@media screen and (max-width: 519px) {
+    .advantages-all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .advantages-image {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .advantages-image .image2 {
+        width: 200px;
+        height: auto;
+        position: relative;
+        transform: translate(-95%, -95%);
+    }
+
+    .advantages-info h2 {
+        font-size: 25px;
+        max-width: 300px;
+        padding-bottom: 30px;
+    }
+
+    .advantages-info p {
+        font-size: 16px;
+        color: rgb(31, 31, 31);
+        line-height: 1.2;
+        max-width: 275px;
+    }
+
+    .directions h2{
+        font-size: 25px;
+    }
+
+    .header-phone .phone {
+        font-size: 22px;
+    }
+}
+
+/*320 - 374*/
+@media screen and (max-width: 374px) {
+    .advantages-advantage {
+        grid-template-columns: 1fr;
+    }
+
+    .header-text {
+        font-size: 25px;
+        color: rgb(136, 23, 136);
+        font-family: MullerBold, sans-serif;
+    }
+}
