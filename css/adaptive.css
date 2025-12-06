@@ -7,12 +7,20 @@
     .product {
         margin: 12px;
     }
+
+    iframe {
+        width: 1100px;
+    }
 }
 
 /*1160 - 1199*/
 @media screen and (max-width: 1199px) {
     .main-image::before {
         width: 580px;
+    }
+
+    iframe {
+        width: 1000px;
     }
 }
 
@@ -29,6 +37,11 @@
         width: 520px;
         bottom: -20px;
     }
+
+    iframe {
+        width: 900px;
+        height: 450px;
+    }
 }
 
 /*950 - 1059*/
@@ -39,6 +52,11 @@
 
     .main {
         margin-bottom: 0;
+    }
+
+    iframe {
+        width: 850px;
+        height: 420px;
     }
 }
 
@@ -60,6 +78,11 @@
     .main-info p {
         margin-bottom: 10px;
     }
+
+    iframe {
+        width: 800px;
+        height: 400px;
+    }
 }
 
 /*768 - 849*/
@@ -80,6 +103,11 @@
         position: absolute;
         transform: translate(-70%, -60%);
         border: none;
+    }
+
+    iframe {
+        width: 700px;
+        height: 350px;
     }
 }
 
@@ -112,6 +140,10 @@
         text-align: center;
     }
 
+    iframe {
+        width: 600px;
+    }
+
     .header .container {
         flex-wrap: wrap;
         justify-content: center;
@@ -134,7 +166,7 @@
     .advantages-image .image2 {
         width: 200px;
         height: auto;
-        transform: translate(-90%, -70%);
+        transform: translate(-70%, -70%);
     }
 
     .advantages-info h2 {
@@ -159,6 +191,11 @@
 
     .directions h2{
         font-size: 30px;
+    }
+
+    iframe {
+        width: 580px;
+        height: 270px;
     }
 
     .footer {
@@ -193,6 +230,11 @@
         width: 300px;
     }
 
+    iframe {
+        width: 500px;
+        height: 250px;
+    }
+
 }
 
 /*375 - 519*/
@@ -213,7 +255,7 @@
         width: 200px;
         height: auto;
         position: relative;
-        transform: translate(-95%, -95%);
+        transform: translate(-75%, -90%);
     }
 
     .advantages-info h2 {
@@ -233,6 +275,11 @@
         font-size: 25px;
     }
 
+    iframe {
+        width: 350px;
+        height: 200px;
+    }
+
     .header-phone .phone {
         font-size: 22px;
     }
@@ -248,5 +295,9 @@
         font-size: 25px;
         color: rgb(136, 23, 136);
         font-family: MullerBold, sans-serif;
+    }
+
+    iframe {
+        width: 300px;
     }
 }
