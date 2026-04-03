@@ -115,6 +115,12 @@
 @media screen and (max-width: 767px) {
     .header-text {
         margin: 10px 0;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .rassada-link {
+        white-space: normal;
     }
 
     .header-phone-one {
@@ -239,6 +245,10 @@
 
 /*375 - 519*/
 @media screen and (max-width: 519px) {
+    .header-text {
+        font-size: 20px;
+    }
+
     .advantages-all {
         display: flex;
         flex-direction: column;
@@ -292,9 +302,14 @@
     }
 
     .header-text {
-        font-size: 25px;
+        font-size: 18px;
         color: rgb(136, 23, 136);
         font-family: MullerBold, sans-serif;
+    }
+
+    .rassada-link {
+        display: block;
+        margin-top: 5px;
     }
 
     iframe {

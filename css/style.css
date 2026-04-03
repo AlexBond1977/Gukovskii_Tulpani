@@ -51,6 +51,22 @@ body {
     font-family: MullerBold, sans-serif;
 }
 
+/* Стили для ссылки "рассада" */
+.rassada-link {
+    white-space: nowrap;
+}
+
+.rassada-link__anchor {
+    color: rgb(136, 23, 136);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.rassada-link__anchor:hover {
+    color: #29b6f6;
+    text-decoration: none;
+}
+
 .header-phone .phone {
     text-decoration: none;
     font-size: 24px;
