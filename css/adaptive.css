@@ -60,9 +60,69 @@
     }
 }
 
+/*864 - 949 (правила хедера действуют до 320px) */
+@media screen and (max-width: 864px) {
+    .header-text {
+        margin: 10px 0;
+        font-size: 24px;
+        text-align: center;
+    }
 
-/*850 - 949*/
-@media screen and (max-width: 949px) {
+    .rassada-link {
+        white-space: normal;
+    }
+
+    .header-phone-one {
+        margin-bottom: 10px;
+    }
+
+    .header .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 390px;
+    }
+
+    .order-wrap {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 90;
+        padding: 8px 12px;
+        background: #ffefef;
+    }
+
+    .order {
+        display: flex;
+        justify-content: center;
+    }
+
+    .order-button {
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+        padding: 10px 14px;
+        font-size: 16px;
+        border-radius: 14px;
+        box-shadow: 0 6px 18px rgba(136, 23, 136, 0.18);
+    }
+
+    .order-button .banner-text {
+        font-size: 16px;
+    }
+
+    .order-wrap.is-docked {
+        position: static;
+        background: transparent;
+        padding: 0 12px 12px;
+    }
+}
+
+/*850 - 863*/
+@media screen and (max-width: 863px) {
     .advantages-advantage {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -113,20 +173,6 @@
 
 /*625 - 767*/
 @media screen and (max-width: 767px) {
-    .header-text {
-        margin: 10px 0;
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .rassada-link {
-        white-space: normal;
-    }
-
-    .header-phone-one {
-        margin-bottom: 10px;
-    }
-
     .main .container {
         flex-direction: column;
     }
@@ -148,12 +194,6 @@
 
     iframe {
         width: 600px;
-    }
-
-    .header .container {
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 390px;
     }
 }
 
@@ -195,7 +235,7 @@
         max-width: 100%;
     }
 
-    .directions h2{
+    .directions h2 {
         font-size: 30px;
     }
 
@@ -221,6 +261,16 @@
     .rights {
         margin-top: 20px;
     }
+
+    .banner-wrap {
+        padding: 8px 12px;
+    }
+
+    .banner {
+        font-size: 16px;
+        padding: 10px 14px;
+        border-radius: 14px;
+    }
 }
 
 /*520 - 611*/
@@ -240,7 +290,6 @@
         width: 500px;
         height: 250px;
     }
-
 }
 
 /*375 - 519*/
@@ -281,7 +330,7 @@
         max-width: 275px;
     }
 
-    .directions h2{
+    .directions h2 {
         font-size: 25px;
     }
 
@@ -314,5 +363,10 @@
 
     iframe {
         width: 300px;
+    }
+
+    .banner {
+        font-size: 14px;
+        padding: 8px 10px;
     }
 }
