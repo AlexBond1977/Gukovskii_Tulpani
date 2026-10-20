@@ -2,57 +2,70 @@
 
 // Массив с данными о тюльпанах
 const tulipsData = [
-    { id: 1, name: 'AVANT GARDE', image: 'AvantGarde.png', height: '40-50 см', budHeight: '6-7 см', class: 'пионовидные махровые' },
-    { id: 2, name: 'BODY BUILDER', image: 'BODY_BUILDER.png', height: '50-55 см', budHeight: '8-10 см', class: 'триумф' },
-    { id: 3, name: 'BULLIT', image: 'BULLIT.png', height: '55-60 см', budHeight: '8-10 см', class: 'триумф' },
-    { id: 4, name: 'COLUMBUS', image: 'Columbus.png', height: '40-45 см', budHeight: '6-8 см', class: 'пионовидные' },
-    { id: 5, name: 'CHRISTMAS GIFT', image: 'CHRISTMAS_GIFT.png', height: '50-55 см', budHeight: '8-10 см', class: 'триумф' },
-    { id: 6, name: 'CIRCUIT', image: 'CIRCUIT.png', height: '50-60 см', budHeight: '5 см', class: 'триумф' },
-    { id: 7, name: 'CREME FRAICHE', image: 'CremeFraiche.png', height: '45-55 см', budHeight: '6-8 см', class: 'триумф' },
-    { id: 8, name: 'CURRY', image: 'CURRY.png', height: '50-60 см', budHeight: '7-8 см', class: 'триумф' },
-    { id: 9, name: 'DELTA STORM', image: 'DELTA_STRONG.png', height: '50-60 см', budHeight: '7-9 см', class: 'триумф' },
-    { id: 10, name: 'DENMARK', image: 'DENMARK.png', height: '50-60 см', budHeight: '7 см', class: 'триумф' },
-    { id: 11, name: 'DISCO', image: 'DISCO.png', height: '50-60 см', budHeight: '7-10 см', class: 'триумф' },
-    { id: 12, name: 'DOW JONES', image: 'DOW_JONES.png', height: '45-50 см', budHeight: '6-9 см', class: 'триумф' },
-    { id: 13, name: 'DYNASTY', image: 'DYNASTY.png', height: '45-50 см', budHeight: '8 см', class: 'триумф' },
-    { id: 14, name: 'FIRST LIFE', image: 'FirstLife.png', height: '60-65 см', budHeight: '8 см', class: 'триумф' },
-    { id: 15, name: 'FIRST CLASS', image: 'FirstClass.png', height: '45-55 см', budHeight: '7-8 см', class: 'триумф' },
-    { id: 16, name: 'FLAMING FLAG', image: 'FlamingFlag.png', height: '40-50 см', budHeight: 'до 10 см', class: 'триумф' },
-    { id: 17, name: 'FLASH POINT', image: 'FlashPoint.png', height: '40-45 см', budHeight: '10-15 см', class: 'махровые' },
-    { id: 18, name: 'FORTRESS', image: 'FORTRESS.png', height: '50-60 см', budHeight: '8 см', class: 'триумф' },
-    { id: 19, name: 'HAKUUN', image: 'HAKUUN.png', height: '70 см', budHeight: 'до 12 см', class: 'дарвиновы гибриды' },
-    { id: 20, name: 'HENNIE VAN DE MOST', image: 'HennieVanDeMost.png', height: '50-60 см', budHeight: '7-9 см', class: 'дарвиновы гибриды' },
-    { id: 21, name: 'ICOON', image: 'ICOON.png', height: '55-60 см', budHeight: '5-6 см', class: 'пионовидный' },
-    { id: 22, name: 'INVANDER', image: 'INVANDER.png', height: '50 см', budHeight: '7-8 см', class: 'триумф' },
-    { id: 23, name: 'JUMBO PINK', image: 'JUMBO_PINK.png', height: '50-70 см', budHeight: '6-7 см', class: 'триумф' },
-    { id: 24, name: 'LINCOLN', image: 'Lincoln.png', height: 'до 50 см', budHeight: '7-8 см', class: 'триумф' },
-    { id: 25, name: 'MARGARITA', image: 'Margarita.png', height: 'до 25-35 см', budHeight: '10-12 см', class: 'махровые' },
-    { id: 26, name: 'NOVI SUN', image: 'NOVI_SUN.png', height: '40-50 см', budHeight: '6-10 см', class: 'триумф' },
-    { id: 27, name: 'ORANGE SHERPA', image: 'OrangeSherpa.png', height: '40-50 см', budHeight: '6-8 см', class: 'триумф' },
-    { id: 28, name: 'PINK ARDOUR', image: 'PINK_ARDOUR.png', height: '45-55 см', budHeight: '6-8 см', class: 'триумф' },
-    { id: 29, name: 'PURPLE LADY', image: 'PurpleLady.png', height: '40-50 см', budHeight: '6-8 см', class: 'триумф' },
-    { id: 30, name: 'ROYAL VIRGIN', image: 'RoyalVirgin.png', height: '45-50 см', budHeight: '8-10 см', class: 'триумф' },
-    { id: 31, name: 'STRONG ENERGY', image: 'STRONG_ENERGY.png', height: '45-50 см', budHeight: '6-7 см', class: 'триумф' },
-    { id: 32, name: 'STRONG GOLD', image: 'STRONG_GOLD.png', height: '50-70 см', budHeight: '7-9 см', class: 'триумф' },
-    { id: 33, name: 'STRONG LOVE', image: 'STRONG_LOVE.png', height: '50-55 см', budHeight: '6-10 см', class: 'триумф' },
-    { id: 34, name: 'SUPER MODEL', image: 'SUPER_MODEL.png', height: '50-55 см', budHeight: '8 см', class: 'триумф' },
-    { id: 35, name: 'SYNAEDA BLUE', image: 'SynaedaBlue.png', height: '45-55 см', budHeight: '7-8 см', class: 'триумф' },
-    { id: 36, name: 'UPDATE', image: 'Update.png', height: '45-50 см', budHeight: '6-8 см', class: 'триумф' },
-    { id: 37, name: 'VALDIVIA', image: 'VALDIVIA.png', height: '40-45 см', budHeight: '5 см', class: 'махровый' },
-    { id: 38, name: 'VERANDI', image: 'Verandi.png', height: '40-50 см', budHeight: '5-6 см', class: 'триумф' },
-    { id: 39, name: 'WHITE DYNASTY', image: 'WHITE_DYNASTY.png', height: '45-65 см', budHeight: '8 см', class: 'триумф' },
-    { id: 40, name: 'WHITE PRINCE', image: 'WhitePrince.png', height: '30-40 см', budHeight: '8-10 см', class: 'простые' }
+    { id: 1, name: 'Alison Bradley', image: 'AlisonBradley.png', height: '40-50 см', budHeight: '8-10 см', class: 'махровые ранние' },
+    { id: 2, name: 'Argos', image: 'Argos.png', height: '45-50 см', budHeight: '6-8 см', class: 'триумф' },
+    { id: 3, name: 'Avant Garde', image: 'AvantGarde.png', height: '40-50 см', budHeight: '6-7 см', class: 'пионовидные махровые' },
+    { id: 4, name: 'Body Builder', image: 'BODY_BUILDER.png', height: '50-55 см', budHeight: '8-10 см', class: 'триумф' },
+    { id: 5, name: 'Brindisi', image: 'Brindisi.png', height: '40 см', budHeight: '6-8 см', class: 'махровые ранние' },
+    { id: 6, name: 'Christmas Gift', image: 'CHRISTMAS_GIFT.png', height: '50-55 см', budHeight: '8-10 см', class: 'триумф' },
+    { id: 7, name: 'Columbus', image: 'Columbus.png', height: '40-45 см', budHeight: '6-8 см', class: 'пионовидные' },
+    { id: 8, name: 'Creme Fraiche', image: 'CremeFraiche.png', height: '45-55 см', budHeight: '6-8 см', class: 'триумф' },
+    { id: 9, name: 'Delta Storm', image: 'DELTA_STRONG.png', height: '50-60 см', budHeight: '7-9 см', class: 'триумф' },
+    { id: 10, name: 'Denmark', image: 'DENMARK.png', height: '50-60 см', budHeight: '7 см', class: 'триумф' },
+    { id: 11, name: 'Dynasty', image: 'DYNASTY.png', height: '45-50 см', budHeight: '8 см', class: 'триумф' },
+    { id: 12, name: 'First Class', image: 'FirstClass.png', height: '45-55 см', budHeight: '7-8 см', class: 'триумф' },
+    { id: 13, name: 'Flaming Flag', image: 'FlamingFlag.png', height: '40-50 см', budHeight: 'до 10 см', class: 'триумф' },
+    { id: 14, name: 'Flashpoint', image: 'FlashPoint.png', height: '40-45 см', budHeight: '10-15 см', class: 'махровые' },
+    { id: 15, name: 'Gabriella', image: 'Gabriella.png', height: '40-60 см', budHeight: '7-8 см', class: 'триумф' },
+    { id: 16, name: 'Icoon', image: 'ICOON.png', height: '55-60 см', budHeight: '5-6 см', class: 'пионовидные' },
+    { id: 17, name: 'Laptop', image: 'Laptop.png', height: '40-50 см', budHeight: '6-8 см', class: 'триумф' },
+    { id: 18, name: 'Lincoln', image: 'Lincoln.png', height: 'до 50 см', budHeight: '7-8 см', class: 'триумф' },
+    { id: 19, name: 'Montezuma', image: 'Montezuma.png', height: '50-60 см', budHeight: '7-8 см', class: 'триумф' },
+    { id: 20, name: 'Mosni', image: 'Mosni.png', height: '45-50 см', budHeight: '6-9 см', class: 'триумф' },
+    { id: 21, name: 'Neper', image: 'Neper.png', height: '45-55 см', budHeight: '7-9 см', class: 'триумф' },
+    { id: 22, name: 'Novi Sun', image: 'NOVI_SUN.png', height: '40-50 см', budHeight: '6-10 см', class: 'триумф' },
+    { id: 23, name: 'Pink Ardur', image: 'PINK_ARDOUR.png', height: '45-55 см', budHeight: '6-8 см', class: 'триумф' },
+    { id: 24, name: 'Queensday', image: 'Queensday.png', height: '40-45 см', budHeight: '6-8 см', class: 'махровые пионовидные' },
+    { id: 25, name: 'Red Solder', image: 'RedSolder.png', height: '50-60 см', budHeight: '6-8 см', class: 'триумф' },
+    { id: 26, name: 'Red Stone', image: 'RedStone.png', height: '35-50 см', budHeight: '6-8 см', class: 'триумф' },
+    { id: 27, name: 'Scarlet Verona', image: 'ScarletVerona.png', height: '35-45 см', budHeight: '5-7 см', class: 'махровые ранние' },
+    { id: 28, name: 'Showdown', image: 'Showdown.png', height: '35-40 см', budHeight: '6-7 см', class: 'триумф' },
+    { id: 29, name: 'Strong Gold', image: 'STRONG_GOLD.png', height: '50-70 см', budHeight: '7-9 см', class: 'триумф' },
+    { id: 30, name: 'Strong Love', image: 'STRONG_LOVE.png', height: '50-55 см', budHeight: '6-10 см', class: 'триумф' },
+    { id: 31, name: 'Supermodel', image: 'SUPER_MODEL.png', height: '50-55 см', budHeight: '8 см', class: 'триумф' },
+    { id: 32, name: 'Valdivia', image: 'VALDIVIA.png', height: '40-45 см', budHeight: '5 см', class: 'махровые' },
+    { id: 33, name: 'Verandi', image: 'Verandi.png', height: '40-50 см', budHeight: '5-6 см', class: 'триумф' },
+    { id: 34, name: 'White Flag', image: 'WhiteFlag.png', height: '35-45 см', budHeight: '6-7 см', class: 'триумф' },
+    { id: 35, name: 'White Marvel', image: 'WhiteMarvel.png', height: '35-50 см', budHeight: '6-8 см', class: 'простые ранние' }
 ];
 
-// Функция для рендеринга товаров (все сразу с классом sold-out)
+// ID проданных тюльпанов.
+const soldOutIds = [];
+
+/**
+ * Формирует HTML для одной характеристики товара.
+ * Если значение пустое — возвращает пустую строку (пункт не выводится).
+ */
+function buildSpecItem(label, value) {
+    if (!value || !String(value).trim()) return '';
+    return `<li>${label}: ${value}</li>`;
+}
+
+// Функция для рендеринга товаров
 function renderProducts() {
     const productsContainer = document.querySelector('.products-items');
     if (!productsContainer) return;
 
     let html = '';
     tulipsData.forEach(tulip => {
+        const isSoldOut = soldOutIds.includes(tulip.id);
+        const specsHtml =
+            buildSpecItem('Высота', tulip.height) +
+            buildSpecItem('Высота бутона', tulip.budHeight) +
+            buildSpecItem('Класс', tulip.class);
+
         html += `
-            <div class="product sold-out" id="${tulip.id}">
+            <div class="product${isSoldOut ? ' sold-out' : ''}" id="${tulip.id}">
                 <div class="product-image">
                     <img src="images/${tulip.image}" alt="${tulip.name}">
                 </div>
@@ -60,11 +73,7 @@ function renderProducts() {
                     ${tulip.name}
                 </div>
                 <div class="product-text">
-                    <ul>
-                        <li>Высота: ${tulip.height}</li>
-                        <li>Высота бутона: ${tulip.budHeight}</li>
-                        <li>Класс: ${tulip.class}</li>
-                    </ul>
+                    <ul>${specsHtml}</ul>
                 </div>
                 <span>${tulip.id}</span>
             </div>
@@ -75,13 +84,13 @@ function renderProducts() {
 }
 
 window.onload = function () {
-    // Рендерим товары (все уже с классом sold-out)
+    // Рендерим товары
     renderProducts();
 
     // Обновляем год в футере
     document.querySelector('.rights span').innerText = (new Date()).getFullYear();
 
-    // Переупорядочиваем проданные товары (хотя все проданные, порядок сохраняется по id)
+    // Переупорядочиваем проданные товары (в конец списка)
     reorderSoldItems();
 
     // Telegram ссылки
